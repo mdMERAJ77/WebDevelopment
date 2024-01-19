@@ -6,26 +6,32 @@
     <title>Forms</title>
 </head>
 <body>
+    <!-- User input form with action attribute pointing to "/action" -->
     <form action="/action">
 
-    <div> 
-         <label for="Username">Username: </label>
-         <input type="text" placeholder="Enter Username" id="Username"/>
-    </div>
+        <!-- Input field for username -->
+        <div> 
+            <label for="Username">Username: </label>
+            <input type="text" placeholder="Enter Username" id="Username"/>
+        </div>
         
-    <div>
-      <label for="password">password :</label>
-      <input type="password" placeholder="Enter Password" id="password"/>
-    </div>
+        <!-- Input field for password -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter Password" id="password"/>
+        </div>
 
-    <div>
-        <label for="age">Enter Age: </label>
-        <input type="number" placeholder="Enter age" id="age"/>
+        <!-- Input field for age -->
+        <div>
+            <label for="age">Enter Age: </label>
+            <input type="number" placeholder="Enter age" id="age"/>
+        </div>
+
+        <!-- Submit button for form submission -->
+        <button>Submit</button>
         
-    </div>
-
-    <button>Submit</button>
-    <button type="reset">reset</button>
+        <!-- Reset button to clear form inputs -->
+        <button type="reset">Reset</button>
     </form>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- First form with a range input for selecting volume, and a submit button -->
+    <form action="/server">
+        <!-- Container for volume control -->
+        <div>
+            <!-- Label for the volume range input -->
+            <label for="volume">Volume</label>
+            <!-- Range input allowing users to adjust the volume -->
+            <input type="range" name="volume" id="volume">
+        </div>
+        <!-- Submit button for the form (not required in this case) -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Second form with a range input for selecting volume with specified attributes -->
+    <form>
+        <!-- Container for volume control -->
+        <div>
+            <!-- Label for the volume range input -->
+            <label for="volume">Volume</label>
+            <!-- Range input allowing users to adjust the volume with specific attributes -->
+            <input type="range" name="volume" id="volume" min="0" max="100" step="10"/>
+        </div>
+    </form>
+</body>
+</html>

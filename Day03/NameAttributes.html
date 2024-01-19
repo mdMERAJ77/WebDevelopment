@@ -6,27 +6,35 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- User information form with action attribute pointing to "/server" -->
     <form action="/server">
+        <!-- Input field for username -->
         <div>
             <label for="Username">Username: </label>
             <input type="text" placeholder="Enter Username" id="Username" name="Username"/>
         </div>
 
+        <!-- Input field for age -->
         <div>
             <label for="Age">Enter Age: </label>
             <input type="number" placeholder="Enter Age" id="Age"/>
         </div>
+        
+        <!-- Submit button for form submission -->
         <button>Submit</button>
     </form>
-<hr>
+    <!-- Horizontal line to separate forms -->
+    <hr>
 
-<div>
-    <form action="https://www.youtube.com/results">
-        <input type="text" placeholder="youtube search" name="search_query">
-        <button type="submit">Search</button>
-    </form>
-</div>
-
- 
+    <!-- YouTube search form with action attribute pointing to YouTube search results -->
+    <div>
+        <form action="https://www.youtube.com/results">
+            <!-- Input field for YouTube search query -->
+            <input type="text" placeholder="YouTube Search" name="search_query">
+            
+            <!-- Submit button to initiate the search -->
+            <button type="submit">Search</button>
+        </form>
+    </div>
 </body>
 </html>
