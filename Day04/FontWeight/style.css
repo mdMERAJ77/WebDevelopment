@@ -1,0 +1,18 @@
+h1{
+    
+    /*text-align: right*/
+    text-align: center;
+    /* border: solid; */
+}
+h3{
+    text-align:right;
+}
+h4{
+    text-align:end;
+}
+p{
+    text-align:justify;
+}
+h2{
+    font-weight: normal;
+}
