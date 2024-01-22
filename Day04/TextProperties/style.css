@@ -1,0 +1,16 @@
+h1{
+    
+    /*text-align: right*/
+    text-align: center;
+    /* border: solid; */
+    width: 50%;
+}
+h3{
+    text-align:right;
+}
+h4{
+    text-align:end;
+}
+p{
+    text-align:justify;
+}

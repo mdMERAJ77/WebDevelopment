@@ -1,0 +1,16 @@
+h1{
+    /*color:rgb(0,255,255);*/
+    color:#00FFFF;  /* hexadecimal color*/
+}
+h2{
+    color:rgb(255,255,0);
+}
+h3{
+    color:rgb(255,255,255);
+    background-color: black;
+}
+h4{
+    /*color:rgb(0,0,0);*/
+    color:#000000; /*hexadecimal color*/
+   
+}
