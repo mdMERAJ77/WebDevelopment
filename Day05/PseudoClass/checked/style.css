@@ -1,0 +1,9 @@
+#yes:checked + label {
+    color: green;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked+label{
+    color:red;
+    font-weight: bold;
+}

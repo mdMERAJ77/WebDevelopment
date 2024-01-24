@@ -1,0 +1,30 @@
+/* Apply 'Courier New' font to all elements */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style for h1 elements */
+h1 {
+    color: #1b74e4;
+}
+
+/* Styling for an element with the ID 'search' */
+#search {
+    background-color: black;
+    color: white;
+}
+
+/* 
+   Uncomment the following lines if you want to style elements with IDs 'login' and 'register'
+   Note: IDs should be unique, consider using classes if styling multiple elements.
+*/
+/*
+#login, #register {
+    background-color: aqua;
+}
+*/
+
+/* Styling for elements with class 'userbtn' */
+.userbtn {
+    background-color: aqua;
+}
