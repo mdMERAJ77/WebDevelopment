@@ -1,0 +1,63 @@
+/* Set the default font for all elements to "Courier New" */
+/* Uncomment the following lines if you want to apply the font to all elements */
+/*
+*{
+    font-family:"Courier New";
+} 
+*/
+
+/* Style for h1 and h3 elements */
+h1, h3 {
+    color: #b92b27;
+}
+
+/* Style for the login button */
+#login {
+    background-color: cyan;
+    color: green;
+}
+
+/* Style for the signup button */
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+/* Style for elements with class "upvote" */
+.upvote {
+    background-color: green;
+    color: aliceblue;
+}
+
+/* Style for elements with class "myclass" */
+.myclass {
+    color: green;
+}
+
+/* Style for elements with class "follow" */
+/* .follow {
+    background-color: yellow;
+} */
+
+/* Style for an element with id "myid" */
+#myid {
+    color: green;
+}
+
+/* Descendant selector: Style links that are descendants of an element with class "post" */
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+/* Descendant selector: Style links that are descendants of an element with class "google" */
+.google a {
+    color: red;
+}
+
+/* Descendant selector: Style links that are descendants of an "a" element within an "li" element within a "ul" element within a "nav" element */
+nav ul li a {
+    color: hotpink;
+}
+
+/* Additional comments or notes can be added as needed */
