@@ -1,0 +1,51 @@
+div{
+    height: 100px;
+    width: 500px;
+    background-color:pink;
+
+    border-width:5px;
+    border-style: solid;
+    border-color:black;
+
+    border-bottom: 5px dashed yellow;
+
+    /*Border radius*/
+    /* border-radius:10px; */
+    border-top-right-radius: 15px;
+
+    /*padding*/
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:50px;
+
+    margin:15px;
+}
+/* h1{
+    border-width:2px;
+    border-style:aqua;
+    border-color:aqua;
+} */
+/* short hand of border*/
+h1{
+    border:5px solid aqua;
+    border-top-color:pink;
+}
+
+button{
+    border-radius:10px;
+    border:5px solid yellow;
+    /* padding-left:25px;
+    padding-right:25px; */
+    background-color:rgb(162, 0, 255);
+    color:rgb(3, 191, 249);
+
+    /*top&botton left&right
+    padding:50px 20%;
+    
+    /*top left&right bottom
+    padding: 1px 2px 3px;*/
+
+    /* clockwise  top right bottom left*/
+    padding:10px 10px 10px 10px
+}
+
