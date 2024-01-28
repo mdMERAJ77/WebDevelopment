@@ -1,0 +1,58 @@
+/* This section adds margin to the top of all sections */
+section {
+    margin-top: 100px;
+}
+
+/* This section styles the div elements */
+div {
+    /* Sets the height, width, text alignment, background color, border, margin, and text color of the div */
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    background-color: #26f30b;
+    border: 2px solid black;
+    margin: 15px auto;
+    color: rgb(247, 248, 248);
+}
+
+/* This section alternates the background color of every second div */
+div:nth-of-type(2n) {
+    background-color: #0c16cc;
+}
+
+/* This section alternates the background color of every third div */
+div:nth-of-type(3n) {
+    background-color: #fb0505;
+}
+
+/* This section transforms the first div by rotating it -45 degrees */
+#one {
+    transform: rotate(-45deg);
+}
+
+/* This section transforms the second div by scaling it to 0.5 in the X-axis and 1.5 in the Y-axis */
+#two {
+    transform: scale(0.5, 1.5);
+}
+
+/* This section transforms the third div by scaling it to 1.5 times its original width */
+#three {
+    transform: scaleX(1.5);
+}
+
+/* This section transforms the fourth div by translating it 100 pixels to the left */
+#fourth {
+    transform: translateX(-100px);
+}
+
+/* This section transforms the fifth div by skewing it by 30 degrees */
+#fivth {
+    transform: skew(30deg);
+}
+
+/* This section transforms the sixth div by rotating it 20 degrees and then translating it 150 pixels to the right */
+#sixth {
+    transform: rotate(20deg) translateX(150px);
+}
+
+/* This is a comment */

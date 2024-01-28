@@ -1,0 +1,30 @@
+/* Styles for the card */
+.card {
+    height: 290px; /* Sets the height of the card */
+    width: 200px; /* Sets the width of the card */
+    display: inline-block; /* Displays the card as an inline block */
+    border: 2px solid black; /* Sets a black border around the card */
+    margin: 10px; /* Sets margins around the card */
+    border-radius: 5px; /* Adds border-radius to give the card rounded corners */
+    background-color: rgb(36, 140, 140); /* Sets the background color of the card */
+    box-shadow: 2px 4px 8px black; /* Adds a box shadow to the card */
+    transition: 1s; /* Adds transition effect for smooth hover effect */
+}
+
+/* Styles for the description */
+.desc {
+    padding: 0 2px 0 2px; /* Adds padding to the description */
+}
+
+/* Styles for the image */
+img {
+    width: 100%; /* Sets the width of the image to 100% of its container */
+    border-radius: 5px 5px 0 0; /* Adds border-radius to the image */
+}
+
+/* Hover effect for the card */
+.card:hover {
+    box-shadow: 0px 8px 16px goldenrod; /* Changes box-shadow on hover to create a glowing effect */
+}
+
+/* This is a comment */
