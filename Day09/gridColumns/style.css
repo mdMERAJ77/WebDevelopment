@@ -1,0 +1,24 @@
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Corrected grid-template-columns value */
+    grid-row-gap: 10px; /* Row gap */
+    grid-column-gap: 30px; /* Column gap */
+}
+
+.item {
+    /* width: 100px;
+    height: 50px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+.one{
+    /* grid-column-start: 1;
+    grid-column-end:4; */
+    /*shorthand*/
+    grid-column:1/4;
+}

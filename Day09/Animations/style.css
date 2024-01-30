@@ -1,0 +1,32 @@
+.box{
+    height:100px;
+    width:300px;
+    background-color:pink;
+
+
+    /* animation-name:widthAnimate;
+    animation-duration:2s;
+    animation-timing-function:ease-out;
+    animation-delay:0s;
+    animation-iteration-count:5;
+    animation-direction:normal; */
+
+    animation: widthAnimate 3s ease-in 0s 2 normal;
+}
+
+@keyframes widthAnimate{
+    from{
+        widht: 10px;
+        background-color:green;
+        font-size:20px;
+    }
+    to{
+        width:400px;
+        background-color:aqua;
+        font-size:40px;
+    }
+}
+
+
+
+ 
