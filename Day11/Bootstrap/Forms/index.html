@@ -11,19 +11,49 @@
     <div class="container">
         <h2>Form Demo</h2>
         <form>
+            <div class="row">
 
-            <div class="mb-3">            
-                <label class="form-label" for="email">Email</label>
-                <input type="text" class="form-control" placeholder="Email" id="email"/>
-            </div>
-            
-            <div class="mb-3">
+                <div class="mb-3 col-md-6">            
+                    <label class="form-label" for="email">Email</label>
+                    <input type="text" class="form-control" placeholder="Email" id="email"/>
+                </div>
+
+                
+            <div class="mb-3 col-md-6">
                 <label class="form-label" for="password">Password</label>
                 <input type="password" class="form-control" placeholder="password" id="password"/></div>
+            </div>
+            
 
             <div class="mb-3">
                 <label class="form-label" for="address">Address</label>
-                <input type="text" class="form-control-lg" placeholder="Address" id="address"/></div>
+                <input type="text" class="form-control-lg" placeholder="Address" id="address"/>
+            </div>
+
+            <div class="mb-3">
+                <select class="form-select">
+                    <option selected>Choose your city</option>
+                    <option vlaue="1">Bihar</option>
+                    <option vlaue="2">Delhi</option>
+                    <option value="3">Kolkata</option>
+
+                </select>
+            </div>
+
+            <div class="mb-3 form-check">                
+                <input type="checkbox" id="agreebs" class="form-check-input"/>
+                <label for="agreebs" class="form-check-label">Agree</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="radio" id="radiobs" class="form-check-input"/>
+                <label for="radiobs" class="form-check-label">Yes</label>
+            </div>
+            
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox</label>
+            </div>
         </form>
     </div>
 
