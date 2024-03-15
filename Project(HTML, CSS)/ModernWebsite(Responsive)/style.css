@@ -1,55 +1,197 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --primary-text-color:#183b56;
-    --secondary-text-color:#577592;
-    --accent-color:#2294ed;
-    --accent-color-dark:#1d69a3;
-    --padding-inline-section:20px;
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
 }
-body{
-    font-family: 'Poppins',sans-serif;
-    color:var(--primary-text-color);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
 }
-h1{
+
+h1 {
     font-size: 3rem;
 }
-h2{
+
+h2 {
     font-size: 2rem;
 }
-h3{
+
+h3 {
     font-size: 1.5rem;
 }
-p{
-    font-family: 'Roboto',sans-serif;
+
+p {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
-    color:var(--secondary-text-color);
+    color: var(--secondary-text-color);
     line-height: 1.8rem;
 }
-a{
+
+a {
     text-decoration: none;
     display: inline-block;
 }
-/* utility classes*/
-.small-bold-text{
-    font-size:1rem;
+
+ul {
+    list-style: none;
+}
+
+/*  start of utility classes*/
+.small-bold-text {
+    font-size: 1rem;
     font-weight: 700;
 }
-.container{
+
+.container {
     max-width: 1180px;
-    margin-inline:auto;
-    padding:var(--padding-inline-section);
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
 }
-.top-banner{
-    background-color: #4fb3d4;
+
+.flex {
+    display: flex;
+    align-items: center;
 }
-.banner-text{
-    color:white;
-    padding:15px 30px;
+
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    border: 0.5px solid var(--primary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+/*end of utility classes*/
+.main-nav {
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-link {
+    flex-basis: 730px;
+}
+
+.nav-link ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+/***** Header Start Section *****/
+.header {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-left h1 {
+    margin-top: 20px;
+}
+
+.get-started-btn {
+    margin-top: 20px;
+}
+
+.header-right img {
+    width: 600px;
+}
+
+/*****  Header End Header  *****/
+
+/***** Companies Start Section *****/
+.companies-header {
+    text-align: center;
+    margin: 0px 30px 30px 30px;
+    color: var(--primary-text-color)
+}
+
+.companies-section-logo {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.C-LOGO {
+    height: 46px;
+}
+
+/***** End Companies Start  *****/
+
+/***** features-section Section *****/
+.features-header {
     text-align: center;
 }
+
+.features-section {
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 32.svg);
+    background-repeat: no-repeat;
+}
+
+.features-header-text {
+    margin-bottom: 20px;
+}
+.features-area{
+    flex-wrap: wrap;
+    gap:40px;
+    margin-top:20px;
+}
+.features-card{
+    flex-direction: column;
+    gap:20px;
+    max-width:30%;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+/***** End features-section  *****/
