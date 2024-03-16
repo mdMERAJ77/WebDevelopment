@@ -124,10 +124,7 @@ a {
     width:fit-content;
 }
 
-.badge:hover {
-    box-shadow: 0 0 3px yellow;
-    margin-top: 10px;
-  }
+
 /***** End Sidebar  *****/
 
 
@@ -152,3 +149,37 @@ a {
 }
 
 /***** End music-player  *****/
+
+/***** Start Main-content *****/ 
+.sticky-nav{
+    position:sticky;
+    top:0;
+    background-color: #121212;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0 1rem 0;
+}
+.sticky-nav-icons{
+    margin-left:0.5rem;
+  
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin-right:1rem;
+}
+.dark-badge{
+    background-color: #000;
+    color:#fff;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+/***** End Main-content *****/
