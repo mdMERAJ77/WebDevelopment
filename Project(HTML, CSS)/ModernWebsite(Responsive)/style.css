@@ -82,6 +82,7 @@ ul {
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
+    text-align: center;
 }
 
 .primary-button:hover {
@@ -106,6 +107,7 @@ ul {
 .main-nav {
     justify-content: space-between;
     margin-top: 0px;
+    position: relative;
 }
 
 .company-logo img {
@@ -121,8 +123,8 @@ ul {
     gap: 40px;
 }
 
-.nav-toggle{
-    display:none;
+.nav-toggle {
+    display: none;
 }
 
 /***** Header Start Section *****/
@@ -148,7 +150,7 @@ ul {
 }
 
 .header-right img {
-    width:100%;
+    width: 100%;
 }
 
 /*****  Header End Header  *****/
@@ -163,7 +165,7 @@ ul {
 .companies-section-logo {
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap:20px
+    gap: 20px
 }
 
 .C-LOGO {
@@ -175,6 +177,7 @@ ul {
 /***** features-section Section *****/
 .features-header {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .features-section {
@@ -216,6 +219,10 @@ ul {
     gap: 30px;
 }
 
+#second-big-feature {
+    flex-direction: row-reverse;
+}
+
 .feature-img img {
     width: 100%;
 }
@@ -229,15 +236,20 @@ ul {
 
 
 /***** Example-section Start Section *****/
+.examples-section {
+    padding:80px var(--padding-inline-section);
+}
+
 .examples-header {
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
 
 .examples-area {
     justify-content: space-between;
     margin-block: 30px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .examples-card {
@@ -292,6 +304,7 @@ ul {
     flex-direction: column;
     gap: 30px;
     color: white;
+    text-align: center;
 }
 
 .cta-section {
@@ -338,8 +351,7 @@ ul {
 .sub-footer-container {
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 /***** End sub footer  *****/
-
-
