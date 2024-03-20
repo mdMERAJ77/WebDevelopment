@@ -7,3 +7,11 @@ Cars.unshift('toyota');
 console.log(Cars);
 Cars.shift();
 console.log(Cars);
+
+
+// Practice Questions
+let arr =['january','july','march','august'];
+console.log(arr);
+arr.shift();
+arr.unshift('june');
+console.log(arr);
