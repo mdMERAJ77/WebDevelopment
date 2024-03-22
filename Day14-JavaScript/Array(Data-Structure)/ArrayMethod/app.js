@@ -15,3 +15,11 @@ console.log(arr);
 arr.shift();
 arr.unshift('june');
 console.log(arr);
+
+// indexOf:returns index of something  and includes:search for a value
+let color = ['red','yellow','blue'];
+
+console.log(color.indexOf('red')); //0
+console.log(color.includes('red')); //true
+console.log(color.indexOf('blue')); //2
+console.log(color.includes('green')); //false
