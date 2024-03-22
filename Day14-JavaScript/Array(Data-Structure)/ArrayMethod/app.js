@@ -23,3 +23,13 @@ console.log(color.indexOf('red')); //0
 console.log(color.includes('red')); //true
 console.log(color.indexOf('blue')); //2
 console.log(color.includes('green')); //false
+
+// concat:merge 2 Arrays
+let first =['a','b','c','d'];
+let second =['e','f','g','h'];
+console.log(first.concat(second));
+console.log(second.concat(first));
+
+// reverse:reverse an array
+let array1=['a','b',1,2];
+console.log(array1.reverse());
