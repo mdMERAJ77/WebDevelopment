@@ -50,5 +50,4 @@ console.log(demo.splice(2,0,'x'));
 let alphabet =['c','e','g','d','b','i','a','A'];
 console.log(alphabet.sort());
 let number=[5,2,0,5,8,2,6,9,7,3,0,4,5,8];
-
 console.log(number.sort());
