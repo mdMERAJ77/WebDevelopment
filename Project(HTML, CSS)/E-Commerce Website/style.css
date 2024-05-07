@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Rubik',sans-serif;
+}
+body{
+    padding:0;
+    margin: 0;
+    height:5000px;
+}
+.top-nav{
+    background-color: yellow;
+    padding:12px 48px;
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    color:#323232;
+
+}
+
+.left-icon{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.left-menu{
+    display: flex;
+    gap:20px;
+}
+.line{
+    border-left:2px solid #ccc;
+}
+.badge{
+    border:none;
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:rgb(18, 18, 197);
+    padding-top:2.5px;
+    padding-left:5.5px
+}
+.facebook{
+    color:white;
+}
+.badge-twitter{
+    border:none;
+    width:25px;
+    height: 20px;
+    padding:2px 5px;
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+    background-color: rgb(5, 160, 250);
+}
+.twitter{
+    color:white;
+}
+
+.badge-pinterest{
+    border:none;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    padding:6px 6.5px;
+
+    background-color: rgba(255, 255, 255, 0.677);
+    
+}
+.pinterest{
+    color:red;
+}
+.badge-instagram{
+    border:none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding:6px 6.5px;
+    background-color: white;
+
+}
+.instagram{
+    color:rgb(218, 19, 19);
+}
+.login-menu{
+    text-decoration: none;
+    width: 70px;
+    height: 30px;
+    border-radius:100px;
+    border-color: #ccc;
+    font-size:14px;
+    font-weight: 500;
+}
+.login-menu:hover{
+    background-color: rgb(55, 133, 55);
+    color:white
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:80px 48px;
+    padding:10px 58px;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: red;
+    z-index: 10000000;
+}
+
+.navbar ul{
+    list-style:none;
+    /* padding:0;
+    margin:0; */
+}
+.navbar ul li{
+    display:inline-block;
+}
+.navbar ul li a{
+    display:block;
+    padding:48px 32px; 
+    color:black;
+    font-size:14.5px;
+    font-weight: 500;
+}
+
+.ribon{
+    border:none;
+    position: absolute;
+    top:10px;
+    right:0;
+    padding:4px 8px;
+    color:white;
+}
+.green-ribon{
+    background-color:#83B735;
+}
+.yellow-ribon{
+    background-color: #fed700;
+}
+.ribon div{
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    width:5px;
+    height: 8px;
+    position: absolute;
+    top:23px;
+    left:0;
+}
