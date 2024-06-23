@@ -21,7 +21,7 @@ gsap.to(".nav", {
     start: "top -10%",
     end: "top -11%",
     scrub: 1,
-  },
+  }
 });
 
 gsap.to(".main", {
@@ -32,5 +32,5 @@ gsap.to(".main", {
     start: "top -25%",
     end: "top -70%",
     scrub: 2,
-  },
+  }
 });
