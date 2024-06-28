@@ -1,0 +1,20 @@
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: beige;
+  border: 2px solid saddlebrown;
+  /*transition-property: all;
+  transition-duration: 1s;
+  transition-delay: .5s;
+  transition-timing-function: ease-in;
+  /*Applytoallchangedproperties*/transition:all .5s ease-out ;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
+}
+.box:hover{
+  width: 300px;
+  height: 300px;
+  background-color: rgb(63, 134, 134);
+}
