@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#body-header {
+  background-image: url("assests/About-section/macbook_mouse\ \(1\).jpg");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+
+/***** Navigation *****/
+.nav-section ul {
+  list-style: none;
+  text-align: center;
+}
+.nav-section ul li {
+  display: inline-block;
+  margin: 0px 8px;
+}
+.nav-section ul a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s, border-bottom 4s;
+}
+/* HOVER EFFECT*/
+.nav-section ul a:hover {
+  color: red;
+  border-bottom: 1px solid white;
+}
+
+/***** End Navigation *****/
