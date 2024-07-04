@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: sans-serif; */
 }
 #body-header {
   background-image: url("assests/About-section/macbook_mouse\ \(1\).jpg");
@@ -16,7 +17,6 @@
 .nav-section ul {
   list-style: none;
   text-align: center;
-  
 }
 .nav-section ul li {
   display: inline-block;
@@ -32,7 +32,62 @@
 .nav-section ul a:hover {
   color: lightblue;
   border-bottom: 1px solid white;
-  font-size:1.5rem;
+  font-size: 1.5rem;
+}
+#body-header h1 {
+  color: #fff;
+ text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  margin-top: 12vh;
+}
+/*ICONS*/
+.header-icon ul {
+  display: flex;
+  justify-content: center;
+ 
+}
+.header-icon ul li{
+  list-style: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  
+}
+.header-icon ul li a{
+  color: #fff;
+  
 }
 
 /***** End Navigation *****/
+
+/***** About Section *****/  
+#About{
+  height: auto;
+  width: 100%;
+  
+}
+#my-image{
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  margin-top: -10vh;
+  position: relative;
+}
+#my-image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#About p{
+  /* width: 900px; */
+  padding: 0px 10rem;
+  text-align: center;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/***** End About Section *****/
