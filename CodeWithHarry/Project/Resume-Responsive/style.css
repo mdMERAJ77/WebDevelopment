@@ -36,7 +36,7 @@
 }
 #body-header h1 {
   color: #fff;
- text-align: center;
+  text-align: center;
   font-size: 3rem;
   letter-spacing: 0.3rem;
   margin-top: 12vh;
@@ -45,35 +45,42 @@
 .header-icon ul {
   display: flex;
   justify-content: center;
- 
 }
-.header-icon ul li{
+.header-icon ul li {
   list-style: none;
   padding: 10px;
   font-size: 1.5rem;
-  
 }
-.header-icon ul li a{
+.header-icon ul li a {
   color: #fff;
-  
 }
 
 /***** End Navigation *****/
 
-/***** About Section *****/  
-#About{
+/***** About Section *****/
+
+/* styled paragraph first letter 
+Pseudo Elements*/
+#styled-first-letter::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: red;
+}
+/*End styled paragraph first letter*/
+
+#About {
   height: auto;
   width: 100%;
-  
 }
-#my-image{
+#my-image {
   width: 12rem;
   height: 12rem;
   margin: auto;
   margin-top: -10vh;
   position: relative;
 }
-#my-image img{
+#my-image img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -82,7 +89,7 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#About p{
+#About p {
   /* width: 900px; */
   padding: 0px 10rem;
   text-align: center;
@@ -91,3 +98,125 @@
   font-weight: 500;
 }
 /***** End About Section *****/
+
+/*section*/
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* section:nth-child(2n + 1) {
+  background-color: gray;
+}
+section:nth-child(2n) {
+  background-color: white;
+} */
+
+/***** SKILLS SECTION *****/
+#skills{
+  background-color: gray;
+  padding-bottom: 10px;
+  margin-top:10px ;
+}
+.skills-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 10px auto;
+  font-weight: 400;
+}
+.skills-heading span {
+  font-size: 2.5rem;
+  color: #2854a4;
+  display: inline-block;
+  padding-top: 0.6rem;
+  margin-right: 0.5rem;
+}
+
+.skills-display {
+  width: 50%;
+  /* height: 100px;
+  border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills-display span {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 0.3rem 3rem;
+  cursor: pointer;
+  margin-left: 1.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skill-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  text-align: center;
+}
+.skill-name-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  text-align: center;
+}
+/***** End SKILLS SECTION *****/
+
+/***** Work Experience *****/
+#experience{
+  margin-bottom: 10px;
+}
+.experience-heading {
+  padding: 20px 10px;
+  margin: 10px auto;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.time-line {
+  position: relative;
+  width: 70%;
+  border: 2px solid black;
+}
+.timelinebox {
+  position: relative;
+  width: 30%;
+  left: 5%;
+  min-height: 145px;
+  border: 2px solid black;
+  margin:5px;
+}
+.timelinebox:nth-child(2n){
+  left:65%;
+}
+
+/*timeline divider*/
+.time-line-divider{
+  position: absolute;
+  height: 75%;
+  width: 0;
+  border: 3px dashed;
+  left:50%;
+  top:10%
+
+}
+/*time line traveller*/
+.timeline-traveller{
+  position: sticky;
+  top:25%;
+  font-size: 2rem;
+  color:rgb(168, 23, 23);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+/***** End Work Experience *****/
