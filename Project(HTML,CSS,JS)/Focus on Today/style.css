@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgba(108, 175, 54, 0.711);
+  font-family: 'Poppins','sans-serif';
+  width: 100vw;
+  height: 100vh;
+
+}
+main{
+  margin:0 16px;
+}
+.Title{
+  font-size: 64px;
+  color:#48A300;
+  text-align: center;
+}
+.Title span{
+  color:#61481C;
+}
+
+/***** appContainer *****/ 
+.appContainer{
+  background-color: #FBFBFB;
+  max-width: 660px;
+  margin-inline: auto;
+  padding:32px 48px;
+  box-shadow: 0 0 8px 5px rgba(169, 163, 163, 0.5);
+  /* display: flex; */
+}
+
+.sun-icon{
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 30px;
+}
+.progress-label{
+  font-size: 14px;
+  color: #858585;
+  margin-top: 10px;
+}
+.progress-bar{
+  height: 20px;
+  background-color: rgba(72,163,0,0.1);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-top: 10px;
+}
+
+.progress-value{
+  height: 100%;
+  width: 70%;
+  background-color: #48A300;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-top: 10px;
+}
+
+.error-label{
+  color:#FF5151;
+  font-size: 14px;
+  margin: 15px 0px 10px 0px;
+}
+
+/***** goal-Container *****/ 
+.goal-container{
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  padding:0px 32px;
+  margin-bottom: 46px;
+}
+.checkbox{
+  height: 24px;
+  width: 24px;
+  border:1px solid rgba(97,72,28,0.3);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 10px;
+}
+.goal-input{
+  font-family: inherit;
+  border: none;
+}
+.goal-input::placeholder{
+  color:#D9D9D9;
+}
+.goal-input:hover{
+ outline: none;
+ cursor: pointer;
+}
+/***** End goal-Container *****/
+
+/***** End appContainer *****/
+
+/***** media query *****/ 
+@media (max-width:768px){
+  .Title{
+    font-size: 32px;
+  }
+  .appContainer{
+    padding: 16px 32px;
+  }
+}
+/***** End media query *****/
