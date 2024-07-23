@@ -75,3 +75,6 @@ const shopingCard=[
 ]
 let output1 = shopingCard.reduce((acc,item)=>{return acc+item.price},0)
 console.log(output1)
+
+
+console.log("thanks for watching...")

@@ -1,24 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <script>
-    // console.log("i am first")
-    // setTimeout(function(){
-    //   console.log("i am inside after 2second")
-    // },2000)
-    // console.log("hey i am last")
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // console.log("i am first")
+      // setTimeout(function(){
+      //   console.log("i am inside after 2second")
+      // },2000)
+      // console.log("hey i am last")
+
+      // console.log("hey1"); //sync
+      // console.log("hey2"); //sync
+      // setTimeout(function () {
+      //   console.log("hey3");
+      // }, 0); //async
+      // console.log("hey4"); //async
+
+      // for promises
+      // var ans = new Promise((resolve, reject) => {
+      //   if (false) {
+      //     return resolve();
+      //   } else {
+      //     return reject();
+      //   }
+      // });
+      // ans
+      //   .then(function () {
+      //     console.log("resolve hogaya tha");
+      //   })
+      //   .catch(function () {
+      //     console.log("reject hogaya tha");
+      //   });
+
+      //question
+      // let userInput=prompt("Enter a number between 0 to 9")
+      // let output=new Promise((res,rej)=>{
+      //   if(userInput<5){
+      //     return res();
+      //   }
+      //   else{
+      //     return rej();
+      //   }
+      // })
+
+      // output.then(function(){
+      //   console.log("resolve");
+      // })
+      // .catch(function(){
+      //   console.log("reject");
+      // })
+
+      // question
+      // let ans1 = new Promise(function (res, rej) {
+      //   return res("sabse pahle ghar par aaao");
+      // });
+      // let p1 = ans1.then(function (data) {
+      //   console.log(data);
+      //   return new Promise(function (res, rej) {
+      //     return res("gate kholo aur gate lagao");
+      //   });
+      // });
+
+      // let p2 = p1.then(function (data) {
+      //   console.log(data);
+      //   return new Promise(function (res, rej) {
+      //     return res("khana pakao khana khao");
+      //   });
+      // });
+      // let p3 = p2.then(function (data) {
+      //   console.log(data);
+      //   return new Promise(function (res, rej) {
+      //     return res("incongito mode chalao");
+      //   });
+      // });
+      // let p4 = p3.then(function (data) {
+      //   console.log(data);
+      //   return new Promise(function (res, rej) {
+      //     return res("so jao kynki tum thak gaye ho....");
+      //   });
+      // });
+
+      // let p5 = p4.then(function (data) {
+      //   console.log(data);
+      // });
 
 
-    console.log("hey1");  //sync
-    console.log("hey2") //sync
-    setTimeout(function(){console.log("hey3")},0) //async
-    console.log("hey4") //async
-  </script>
-</body>
+      // Asyn await
+      // function apiCall(){
+      //   fetch(`https://randomuser.me/api/`)
+      //   .then(function(rawData){
+      //     return rawData.json();
+      //   })
+      //   .then(function(data){
+      //     console.log(data)
+      //   })
+      // }
+      // apiCall();
+
+      //nOW WE USING await
+      async function apiCall(){
+        let raw= await fetch(`https://randomuser.me/api/`);
+        let ans=await raw.json();
+        console.log(ans);
+      }
+      apiCall()
+
+      
+    </script>
+  </body>
 </html>
