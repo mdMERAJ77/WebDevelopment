@@ -1,0 +1,16 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  width: 100%;
+}
+.left{
+  width:25%;
+  background-color: black;
+}
+.right{
+  width:75%;
+}
