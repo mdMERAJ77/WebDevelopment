@@ -60,7 +60,7 @@ main{
 
 .progress-value{
   height: 100%;
-  width: 70%;
+  width: 0%;
   background-color: #48A300;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -68,6 +68,15 @@ main{
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  /* padding-left: 10px; */
+  overflow: hidden;
+}
+.progress-value span{
+  color:#FBFBFB;
+  font-size: 10px;
+  padding-left: 20px;
 }
 
 .error-label{
@@ -76,6 +85,9 @@ main{
   position: absolute;
   display: none;
   margin-top:8px;
+}
+.show-error .error-label{
+  display: block;
 }
 
 /***** goal-Container *****/ 
@@ -147,7 +159,7 @@ main{
 .completed .check-icon{
   display: block;
 }
-.completed .goal-input::placeholder{
+.completed .goal-input ::placeholder{
   color:#48A300;
   text-decoration-line: line-through;
   -moz-text-decoration-line: line-through;
