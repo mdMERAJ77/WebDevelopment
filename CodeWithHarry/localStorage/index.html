@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>local storage</h1>
+  <input type="text" placeholder="Name" class="name">
+  <h1>My name is <span class="name-tag"></span></h1>
+
+  <input type="number" placeholder="age" class="age">
+  <h3>My Age is <span class="age-tag"></span></h3>
+
+
+  <script>
+    const nameElement=document.querySelector('.name-tag')
+    const nameInput=document.querySelector('.name')
+    /*for age*/
+    const ageElement=document.querySelector('.age-tag');
+    const ageInput=document.querySelector('.age');
+
+    // nameElement.innerText=localStorage.myName    
+    // nameInput.addEventListener('input',(e)=>{
+    //   localStorage.myName=e.target.value;
+    //   nameElement.innerText=localStorage.myName
+    // })
+
+    // /*for age*/
+    // ageElement.innerText=localStorage.myAge
+    // ageInput.addEventListener('input',(e)=>{
+    //   localStorage.myAge=e.target.value;
+    //   ageElement.innerText=localStorage.myAge
+    // })
+
+    const myData=JSON.parse(localStorage.getItem('myData')) || {}
+
+    nameInput.addEventListener('input',(e)=>{
+      myData.name=e.target.value
+      localStorage.setItem('myData', JSON.stringify(myData))
+      nameElement.innerText=e.target.value
+    })
+    /*for age*/
+    ageInput.addEventListener('input', (e)=>{
+      myData.age=e.target.value;
+      localStorage.setItem('myData',JSON.stringify(myData))
+      ageElement.innerText=e.target.value
+    })
+    nameElement.innerText=myData.name
+    ageElement.innerText=myData.age
+
+  </script>
+</body>
+</html>
