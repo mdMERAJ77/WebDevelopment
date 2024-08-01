@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>talking to the outside the world</h1>
+    <div>
+      <button>Get random image</button>
+    </div>
+    <img src="" style="width: 300px" />
+
+    <script>
+      const btn = document.querySelector("button");
+      const image = document.querySelector("img");
+
+      btn.addEventListener("click", () => {
+        fetch("https://dog.ceo/api/breeds/image/random")
+          .then((Response) => Response.json())
+          .then((json) => {
+            image.src=json.message
+          });
+      });
+    </script>
+  </body>
+</html>
