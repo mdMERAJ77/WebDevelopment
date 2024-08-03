@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>synchronous and asynchronous</h1>
+    <button class="block-btn">Block main thread</button>
+
+
+    
+    <button>Get random image</button>
+  <img src="" style="width: 300px" />
+
+    <script>
+      const blockBtn=document.querySelector('.block-btn')
+
+      blockBtn.addEventListener('click',()=>{
+          const startTime=Date.now()
+          console.log('start',startTime)
+        let currentTime=startTime
+        while(startTime+20>currentTime){
+          currentTime=Date.now()
+          console.log('curr',currentTime)
+      }
+    })
+
+    const btn = document.querySelector("button");
+
+    const image = document.querySelector("img");
+
+      btn.addEventListener("click", () => {
+        fetch("https://dog.ceo/api/breeds/image/random")
+          .then((Response) => Response.json())
+          .then((json) => {
+            image.src=json.message
+          });
+      });
+    
+    </script>
+  </body>
+</html>
