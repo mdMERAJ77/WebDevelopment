@@ -7,27 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>BMI Calculator</h1>
-    <form action="" class="form">
-      <p>
-        <label>Height in CM: </label><input type="number" placeholder="enter height in cm" id="height">
-      </p>
+  <h2>BMI Calculator</h2>
+  <form>
+      <label for="height">Height (cm):</label>
+      <input type="text" id="height" required>
 
-      <p>
-        <label for="">Weight in KG: </label><input type="number" placeholder="enter weight in kg" id="weight">
-      </p>
+      <label for="weight">Weight (kg):</label>
+      <input type="text" id="weight" required>
 
-      <button>Button</button>
-      <div id="result"></div>
-      <div id="weight-guide">
-        <h3>BMI Weight Guide</h3>
-        <p>Under Weight = Less than 18.6</p>
-        <p>Under Range = 18.6 and 24.6</p>
-        <p>Overweight = Greater than 24.9</p>
-      </div>
-    </form>
-  </div>
+      <button type="submit">Calculate BMI</button>
+  </form>
+
+  <div id="result"></div>
+
 
   <script src="script.js"></script>
 </body>
