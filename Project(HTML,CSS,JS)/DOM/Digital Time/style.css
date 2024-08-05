@@ -5,7 +5,6 @@ align-items: center;
 height: 100vh;
 background-color: #f4f4f4;
 margin: 0;
-background-color: rgb(45, 231, 231);
 }
 #clock {
   font-size: 3em;
@@ -26,5 +25,10 @@ background-color: rgb(45, 231, 231);
   100% {
       transform: scale(1);
   }
+}
+
+#clock:hover{
+  background-color: rgb(45, 231, 231);
+
 }
 
