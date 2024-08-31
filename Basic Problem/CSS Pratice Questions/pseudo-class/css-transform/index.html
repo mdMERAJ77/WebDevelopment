@@ -15,7 +15,6 @@
       font-size: 20px;
       text-align: center;
       transition: all 2s ease-in;
-      
     }
 
     .top{
@@ -30,6 +29,14 @@
     #box1{
       background-color: seagreen;
       margin-bottom: 70px;
+
+      /* animation-name: moveLeftToRight;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse; */
+      animation: moveLeftToRight 2s ease-in-out 1s infinite alternate-reverse;
     }
     #box1:hover{
       /* transform: rotate(45deg); */
@@ -39,8 +46,27 @@
 
       /* transform: translateY(50px); */
 
-      transform: skew(-15deg);
+      /* transform: skew(-15deg); */
     }
+    @keyframes moveLeftToRight {
+  /* from {
+    left: 10px;
+  }
+  to {
+    left: 300px;
+    } */
+
+    0%{
+      left:10px;
+    }
+    50%{
+      left:50px;
+    }
+    100%{
+      left:300px;
+    }
+  }
+
 
     #box2{
       background-color: saddlebrown;
