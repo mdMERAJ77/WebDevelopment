@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#calculator{
+  border:1px solid black;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+
+  width:200px ;
+}
+
+#display{
+  margin:10px;
+  width: 85%;
+  font-size: 30px;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.button{
+  width:54px;
+  height: 45px;
+  margin: 3px;
+  font-size: 22px;
+}
+
