@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //ternary operator
+        let age = 18;
+        let output = age >= 18 ? "you can vote" : "you can not vote";
+        console.log(output);
+
+        let user = {
+            name: null
+        };
+        let userName = user.name !== null && user.name !== undefined ? user.name : "Guest";
+        console.log(userName); // Output: Guest
+
+
+        // guard operator
+        let age1 = 5;
+        let finalAge = age1 || 18;
+        console.log(age1);
+        console.log(finalAge);
+
+        //default operator
+        //let age2 = 1;
+        //let finalAge2 = age2 ?? 18;
+        //console.log(age2);
+        // console.log(finalAge2);
+        // let name = "John";
+        //let defaultName = "Guest";
+
+        //let finalName = name ?? defaultName;
+        //console.log(finalName); // Output: John
+    </script>
+</body>
+
+</html>
