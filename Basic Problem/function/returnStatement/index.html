@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Driving Eligibility Check</title>
+</head>
+
+<body>
+    <script>
+        let ageInput = prompt("Enter your age");
+        let age = parseInt(ageInput, 10);
+
+        function CheckingdrivingStatus() {
+            if (ageInput === null || ageInput.trim() === "") {
+                return 'No age provided';
+            }
+
+            if (isNaN(age)) {
+                return 'Invalid input. Please enter a numeric value.';
+            }
+
+            console.log("Checking driving status...");
+
+            if (age >= 18) {
+                return 'You can drive';
+            } else {
+                return 'You cannot drive';
+            }
+        }
+
+        console.log(CheckingdrivingStatus());
+    </script>
+</body>
+
+</html>
