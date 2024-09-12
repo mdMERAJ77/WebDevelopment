@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+        console.log(sum(1, 2))
+        console.log(sum(2, 3))
+
+        function greetings(name = 'guests') {
+            console.log(`your name is ${name}`);
+        }
+        greetings('meraj');
+        greetings(); //take default value =guests
+        greetings('sakib');
+
+        function oddEven(num) {
+            if (num % 2 == 0) {
+                console.log("is even");
+            } else {
+                console.log("is odd");
+            }
+        }
+        oddEven(7); //output: odd
+        oddEven(12) //output: even
+
+        function largerNum(a, b) {
+            return a > b ? a : b;
+        }
+        console.log(largerNum(2, 3));
+        console.log(largerNum(20, 22))
+
+
+        function convertCelToFah(c) {
+            return (9 / 5) * c + 32;
+        }
+        console.log(convertCelToFah(38));
+    </script>
+</body>
+
+</html>
