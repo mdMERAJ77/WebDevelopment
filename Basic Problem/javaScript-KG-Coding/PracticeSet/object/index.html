@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myntra = {
+            'T-Shirt': 'XL',
+            jeansSize: 'M',
+            'T-Shirt-Price': 499,
+            jeansPrice: 1399,
+        };
+        //console.log(myntra['T-Shirt']);
+        console.log(myntra);
+
+        //update price
+        //console.log(myntra.jeansPrice = 200);
+
+        //how to apply object reference
+        let copyMyntra = myntra;
+        console.log(myntra);
+        copyMyntra.jeansSize = 'L'; //Here, I changed jeansSize, but it still reflects the original myntra object.
+        console.log(copyMyntra);
+        console.log(myntra); //Notice that I haven't changed jeanSize, but the output has changed.
+
+        let obj = {
+            message: 'Good job',
+            status: 'Done'
+        };
+        console.log(obj);
+
+        //de-structuring
+        let {
+            message,
+            status,
+        } = obj;
+        console.log(message);
+        console.log(status);
+
+
+
+
+        let product1 = {
+            cloths: 'jeans',
+            price: 1499,
+            discount: '25%'
+        };
+        let product2 = {
+            cloths: 'jersy',
+            price: 2499,
+            discount: '25%'
+        };
+        let product3 = { //it is copy of product2
+            cloths: 'jersy',
+            price: 2499,
+            discount: '25%'
+        };
+
+        function isidentical(obj1, obj2) {
+
+            if (typeof obj1 !== 'object' || typeof obj2 !== 'object') {
+                console.warn('parameter were not passed as an object');
+                return false;
+            }
+
+            if (product1 == product2) {
+                return true;
+            }
+            if (obj1.cloths == obj2.cloths &&
+                obj1.price == obj2.price && obj1.discount == obj2.discount) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        console.log(isidentical(product1, '')); // return false line:66-67-68
+        console.log(isidentical(product1, product1)); //return true line:71-72
+        console.log(isidentical(product1, product2)); //return false line:77-78
+        console.log(isidentical(product2, product3)); // return true line:74-75-76
+    </script>
+</body>
+
+</html>
