@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //let product ={}; //empty object
+        let product = {
+            fruit: "mango",
+            price: 200,
+            MFD: '1/2/2002',
+            'fruit-color': 'red',
+        };
+        console.log(product);
+        console.log(product.price); //access value
+        console.log(product['fruit-color']); //access value quote type variable
+        delete product.price; //delete
+        console.log(product);
+        product.price = 500 //add
+        console.log(product.price);
+
+        let productValue = 'fruit-color';
+        console.log(product[productValue])
+
+
+        let company = {
+            brand: 'headphone',
+            price: 999,
+            color: 'black',
+            displayPrice: function() {
+                console.log(`watch price is ₹${this.price}`);
+            }
+        };
+        company.displayPrice();
+    </script>
+</body>
+
+</html>
